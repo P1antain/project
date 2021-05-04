@@ -1,0 +1,364 @@
+/*Reset Style*/
+@import url(../vendor/normalize.css);
+/*Bind FontFamily*/
+@import url(../vendor/fonts/fonts.css);
+/*
+font-family: 'PTRootUIWebRegular';
+font-family: 'Proto Grotesk Light';
+*/
+
+/*PAGE*/
+.page{
+    max-width: 1920px;
+    color: #000000;
+}
+/* HEADER*/
+
+.header{
+    max-width: 1770px;
+    display: flex;
+    justify-content: space-between;
+    margin: 39px auto 0;
+    align-items: center;
+}
+.header__logo{
+    width: 190px;
+    height: 28px;
+    background-image: url("../images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__menu{
+}
+.header__items{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.header__item{
+    list-style-type: none;
+    padding-right: 30px;
+}
+.header__item:last-child{
+    padding-right: 0;
+}
+.header__item-link{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    transition: all .5s;
+}
+.header__item-link:hover{
+    color: #224CFF;
+}
+.header__profile{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background: transparent url("../images/search.svg");
+    cursor: pointer;
+    margin: 5px;
+    border: 0;
+}
+
+.header__search::after{
+    content: '';
+    margin-left: 34px;
+    border: 0.7px solid #A7A6A6;
+    width: 20px;
+    transform: rotate(90deg);
+    cursor: default;
+}
+.header__login{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background: transparent url("../images/login.svg");
+    cursor: pointer;
+    margin: 5px;
+    border: 0;
+}
+.header__burger{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background: transparent url("../images/boorger.svg");
+    cursor: pointer;
+    margin: 5px;
+    border: 0;
+    display: none;
+}
+@media screen and (min-width:1200px) and (max-width: 1919px){
+    .header{
+        max-width: 1170px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1200px){
+    .header{
+        max-width: 970px;
+    }
+}
+@media screen and (min-width:480px) and (max-width: 1024px){
+    .header{
+        max-width: 790px;
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__login{
+        display: none;
+    }
+    .header__search::after{
+        display: none;
+    }
+    .header__profile{
+        width: 30px;
+        order: -1;
+    }
+    .header__burger{
+        display: block;
+    }
+}
+
+/*Блок Каледнаря*/
+
+.calendar__card{
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    background: #C8D1FF;
+    border-radius: 30px;
+}
+.calendar__heading{
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    margin: 30px auto 0;
+}
+
+.calendar__about{
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    margin: 10px auto 0;
+}
+.calendar__event{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+}
+.calendar__date-number{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 100px;
+}
+.calendar__text{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.calendar__place{
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    margin: 50px auto 0;
+}
+.calendar__time, .calendar__location{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #A7A6A6;;
+}
+.calendar__location, .calendar__leading{
+    padding-top: 10px;
+}
+.calendar__footer{
+    width: 510px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.calendar__footer-left{
+    display: flex;
+}
+.calendar__sing{
+    width: 127px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid #224CFF;
+    color: #224CFF;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    background: transparent;
+    cursor: pointer;
+}
+.calendar__lost-human{
+    align-self: center;
+    padding-left: 15px;
+}
+.calendar__more{
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background:  url("../images/calendarMore.svg");
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+}
+@media screen and (min-width:320px) and (max-width: 1024px){
+    .calendar__card{
+        max-width: 290px;
+    }
+    .calendar__heading,
+    .calendar__about,
+    .calendar__place,
+    .calendar__footer{
+        max-width:260px
+    }
+    .calendar__about{
+        margin: 5px auto 0;
+    }
+    .calendar__text{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .calendar__event{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .calendar__date-number{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .calendar__sing{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .calendar__lost-human{
+        padding-left: 10px;
+    }
+    .calendar__time, .calendar__location{
+        padding-bottom: 5px;
+    }
+    .calendar__location, .calendar__leading{
+        padding-top: 5px;
+    }
+    .calendar__more{
+        width: 40px;
+        height: 40px;
+        background-repeat: round;
+    }
+}
+/*Карточки Ментора*/
+.mentor{
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8D162;
+    border-radius: 30px;
+}
+.mentor__take{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    margin: 17px auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 2px 7px;
+}
+.mentor__about{
+    max-width: 810px;
+    text-align: center;
+    margin: 17px auto 0;
+}
+.mentor__words{
+    font-family: 'Proto Grotesk Light',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 0;
+}
+.mentor__author{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.mentor__image{
+    width: 810px;
+    height: 394px;
+    background-size: cover;
+    background:  url("../images/randomImage.jpg");
+    border-radius: 15px;
+    margin: 40px auto 15px;
+}
+
+.mentor__link{
+    font-family: 'Proto Grotesk Light',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #224CFF;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+@media screen and (min-width:320px) and (max-width: 1024px){
+    .mentor{
+        max-width: 290px;
+    }
+    .mentor__about{
+        max-width: 260px;
+    }
+    .mentor__take{
+        margin: 17px auto 7px;
+    }
+    .mentor__words{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .mentor__author{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .mentor__image{
+        width: 260px;
+        height: 142px;
+        background-size: cover;
+        margin: 16px auto 15px;
+    }
+    .mentor__link{
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+}

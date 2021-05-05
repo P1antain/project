@@ -3,15 +3,14 @@
 /*Bind FontFamily*/
 @import url(../vendor/fonts/fonts.css);
 /*
-font-family: 'PTRootUIWebRegular';
-font-family: 'Proto Grotesk Light';
+font-family: 'PTRootUIWebRegular', sans-serif;
+font-family: 'Proto Grotesk Light', sans-serif;
 */
 
 /*PAGE*/
 .page{
     max-width: 1920px;
-    color: #000000;
-}
+    background: #F3F2F2;}
 /* HEADER*/
 
 .header{
@@ -111,7 +110,7 @@ font-family: 'Proto Grotesk Light';
         max-width: 970px;
     }
 }
-@media screen and (min-width:480px) and (max-width: 1024px){
+@media screen and (min-width:320px) and (max-width: 1024px){
     .header{
         max-width: 790px;
     }
@@ -360,5 +359,262 @@ font-family: 'Proto Grotesk Light';
         font-size: 12px;
         line-height: 17px;
         margin-bottom: 15px;
+    }
+}
+
+/*Статья */
+.article{
+    max-width: 1170px;
+    background: #8CDD94;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.article__header{
+    max-width: 970px;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 50px;
+    margin-top: 120px;
+}
+.article__link{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #224CFF;
+    text-decoration: none;
+    margin: 71px auto 30px;
+}
+@media screen and (min-width:320px) and (max-width: 1024px){
+    .article{
+        width: 290px;
+    }
+    .article__header{
+        width: 260px;
+        font-size: 19px;
+        line-height: 23px;
+        margin-top: 30px;
+    }
+    .article__link{
+        margin: 66px auto 15px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+/*Аннотация*/
+.annotation{
+    width: 420px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.annotation__wrapper{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.annotation__about{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #464646;
+    padding-bottom: 10px;
+}
+.annotation__text{
+    height: 133px;
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+@media screen and (min-width:320px) and (max-width: 1024px){
+    .annotation{
+        width: 290px;
+    }
+    .annotation__wrapper{
+        width: 260px;
+    }
+    .annotation__about{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .annotation__text{
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+/*Видео*/
+.video{
+    width: 420px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.video__trailer{
+    height: 236px;
+    border-radius: 30px 30px 0 0;
+    background-color: #8CDD94;
+    display: flex;
+    justify-content: center;
+    place-items: flex-end;
+}
+.video__take{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    margin: 0 0 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 2px 7px;
+}
+.video__about{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    margin: 15px auto;
+}
+.video__name{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 5px;
+}
+.video__author{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #464646;
+}
+.video__link{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #224CFF;
+    text-decoration: none;
+    margin: 17px 0 15px;
+}
+@media screen and (min-width:320px) and (max-width: 1024px) {
+    .video{
+        width: 290px;
+    }
+    .video__trailer{
+        height: 163px;
+    }
+    .video__about{
+        width: 260px;
+    }
+    .video__name{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .video__author{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .video__link{
+        font-size: 12px;
+        line-height: 17px;
+        margin: 15px 0 15px;
+    }
+}
+/*Книга*/
+.book{
+    width: 420px;
+    background: #FFFFFF;
+    border-radius: 30px 30px 30px 30px;
+}
+.book__header{
+    width: 420px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book__book{
+    width: 240px;
+    height: 320px;
+    background: #FF8585;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+.book__name{
+    width: 200px;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 20px auto 0;
+}
+.book__about{
+    width: 200px;
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 auto 20px;
+}
+.book__about::after{
+    content: '';
+    border: 1px solid #000000;
+    width: 66px;
+    background: #000000;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 35%;
+    bottom: 26%;
+}
+@media screen and (min-width:320px) and (max-width: 1024px){
+    .book{
+        width: 290px;
+    }
+    .book__header{
+        width: 290px;
+        height: 332px;
+    }
+    .book__book{
+        width: 200px;
+        height: 272px;
+    }
+    .book__name{
+        width: 170px;
+        font-size: 19px;
+        line-height: 23px;
+        margin: 15px auto 0;
+    }
+    .book__about{
+        width: 170px;
+        font-size: 12px;
+        line-height: 17px;
+        margin: 0 auto 15px;
     }
 }

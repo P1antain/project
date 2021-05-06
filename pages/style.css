@@ -629,6 +629,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
     justify-content: space-between;
     margin: 0 auto ;
     padding-top: 90px;
+    /*padding-bottom: 80px;*/
 }
 .footer__logo{
     width: 415px;
@@ -694,7 +695,12 @@ font-family: 'Proto Grotesk Light', sans-serif;
     padding-bottom: 0;
 }
 .footer__info{
-
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 50px;
 }
 .footer__project{
     font-family: 'PTRootUIWebRegular', sans-serif;
@@ -712,11 +718,11 @@ font-family: 'Proto Grotesk Light', sans-serif;
     line-height: 26px;
     color: #F3F2F2;
 }
-.footer__link{
-
+.footer__command:last-child{
+    padding-left: 30px;
 }
-.footer__designer{
-
+.footer__link{
+    color: #F3F2F2;
 }
 @media screen and (min-width:320px) and (max-width: 1024px){
     .footer__block{
@@ -758,6 +764,25 @@ font-family: 'Proto Grotesk Light', sans-serif;
     }
     .footer__help{
         order: 3;
-        margin: 31px auto;
+        margin: 30px auto;
+    }
+    .footer__info{
+        align-items: center;
+        position: static;
+        bottom: 0;
+        padding-bottom: 30px;
+    }
+    .footer__project{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .footer__commands{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__command{
+        padding-top: 5px;
+        font-size: 12px;
+        line-height: 17px;
     }
 }

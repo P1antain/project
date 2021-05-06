@@ -731,7 +731,8 @@ font-family: 'Proto Grotesk Light', sans-serif;
     }
     .footer__logo{
         width: 252px;
-        margin: 0 auto 47px;
+        height: 46px;
+        margin: 0 auto 41px;
         background-size: contain;
     }
     .footer__navs{
@@ -742,7 +743,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
         flex-wrap: wrap;
          margin: 0 auto;
         justify-content: center;
-        padding-bottom: 21px;
+        /*padding-bottom: 21px;*/
         border-bottom: 1px solid #C8D1FF;
     }
     .footer__nav{

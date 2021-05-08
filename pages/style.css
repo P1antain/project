@@ -15,10 +15,15 @@ font-family: 'Proto Grotesk Light', sans-serif;
 
 .header{
     max-width: 1770px;
+}
+.header__wrapper-main{
     display: flex;
     justify-content: space-between;
-    margin: 39px auto 0;
+    /*margin: 39px auto 0;*/
     align-items: center;
+}
+.header__wrapper-main_active{
+    background: #FFFFFF;
 }
 .header__logo{
     width: 190px;
@@ -55,6 +60,37 @@ font-family: 'Proto Grotesk Light', sans-serif;
 }
 .header__item-link:hover{
     color: #224CFF;
+}
+.header__item-link_script:hover .header__item-help{
+    display: block;
+}
+.header__item-help{
+    display: none;
+    width: 138px;
+    list-style-type: none;
+    position: absolute;
+    background: #F3F2F2;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 30px 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header__item-help_item{
+    padding-bottom: 10px;
+}
+.header__item-help_link{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__item-help_item:last-child{
+    padding-bottom: 0;
 }
 .header__profile{
     width: 90px;
@@ -99,26 +135,94 @@ font-family: 'Proto Grotesk Light', sans-serif;
     margin: 5px;
     border: 0;
     display: none;
+    transition: .3s all;
 }
-@media screen and (min-width:1200px) and (max-width: 1919px){
+.header__burger_active{
+    background: transparent url("../images/closeBurger.svg");
+}
+.header__wrapper-additional{
+    display: none;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 0 0 30px 30px;
+}
+.header__wrapper-additional_active{
+    display: block;
+}
+.header__burger-menu{
+    display: flex;
+    justify-content: space-around;
+}
+.header__burger-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 50px;
+}
+.header__burger-item{
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.header__burger-link{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #000000;
+    transition: .5s all;
+}
+.header__burger-link:hover{
+    color: #224CFF;
+}
+
+@media screen and (min-width:1440px){
     .header{
-        max-width: 1170px;
+        max-width: 1770px;
+        margin: 0 75px;
+    }
+    .header__wrapper-main{
+        padding-top: 47px ;
+        padding-bottom: 85px;
     }
 }
-@media screen and (min-width:1024px) and (max-width: 1200px){
-    .header{
-        max-width: 970px;
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    .header {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .header__wrapper-main {
+        padding-top: 44px;
+        padding-bottom: 49px;
+    }
+}
+@media screen and (min-width:1025px){
+    .header__wrapper-additional{
+        display: none;
     }
 }
 @media screen and (min-width:320px) and (max-width: 1024px){
     .header{
         max-width: 790px;
+        margin: 0 auto;
+    }
+    .header__wrapper-main{
+        padding: 14px 15px;
     }
     .header__menu{
         display: none;
     }
     .header__login{
         display: none;
+        position: absolute;
+        left: 40px;
+    }
+    .header__logo{
+        width: 130px;
+    }
+    .header__login_active{
+        display: block;
     }
     .header__search::after{
         display: none;
@@ -126,6 +230,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
     .header__profile{
         width: 30px;
         order: -1;
+        position: relative;
     }
     .header__burger{
         display: block;

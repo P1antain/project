@@ -10,24 +10,60 @@
 </head>
 <body class="page">
 <header class="header">
-    <div class="header__logo">
+    <div class="header__wrapper-main">
+        <div class="header__logo"></div>
 
+            <nav class="header__menu">
+                <ul class="header__items">
+                    <li class="header__item"><a href="" class="header__item-link">Календарь</a></li>
+                    <li class="header__item"><a href="" class="header__item-link">куда пойти</a></li>
+                    <li class="header__item"><a href="" class="header__item-link">вопросы</a></li>
+                    <li class="header__item header__item-link_script">
+                        <a href="" class="header__item-link ">читать и смотреть</a>
+                        <ul class="header__item-help">
+                            <li class="header__item-help_item"><a href="#" class="header__item-help_link">Справочник</a></li>
+                            <li class="header__item-help_item"><a href="#" class="header__item-help_link">Видео</a></li>
+                            <li class="header__item-help_item"><a href="#" class="header__item-help_link">Статьи</a></li>
+                            <li class="header__item-help_item"><a href="#" class="header__item-help_link">Фильмы</a></li>
+                            <li class="header__item-help_item"><a href="#" class="header__item-help_link">Книги</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="" class="header__item-link">права детей</a></li>
+                    <li class="header__item"><a href="" class="header__item-link">Истории</a></li>
+                </ul>
+            </nav>
+            <div class="header__profile">
+                <button class="header__search"></button>
+                <button class="header__login"></button>
+            </div>
+            <button class="header__burger"></button>
+        </div>
+        <div class="header__wrapper-additional">
+            <div class="header__burger-menu">
+                <ul class="header__burger-list">
+                    <li class="header__burger-item"><a href="" class="header__burger-link">о проекте</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">Календарь</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">куда пойти</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">вопросы</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">читать и смотреть</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">права детей</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">Истории</a></li>
+                </ul>
+                <ul class="header__burger-list">
+                    <li class="header__burger-item"><a href="" class="header__burger-link">Facebook</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">VKontakte</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">Instagram</a></li>
+                    <li class="header__burger-item"><a href="" class="header__burger-link">Уoutube</a></li>
+                </ul>
+        </div>
     </div>
-    <nav class="header__menu">
-        <ul class="header__items">
-            <li class="header__item"><a href="" class="header__item-link">Календарь</a></li>
-            <li class="header__item"><a href="" class="header__item-link">куда пойти</a></li>
-            <li class="header__item"><a href="" class="header__item-link">вопросы</a></li>
-            <li class="header__item"><a href="" class="header__item-link">читать и смотреть</a></li>
-            <li class="header__item"><a href="" class="header__item-link">права детей</a></li>
-            <li class="header__item"><a href="" class="header__item-link">Истории</a></li>
-        </ul>
-    </nav>
-    <div class="header__profile">
-        <button class="header__search"></button>
-        <button class="header__login"></button>
+    <div class="header__search-field">
+        <form action="" class="header__search-form">
+            <label for="search-input">
+                <input type="text" class="header__search-input" id="search-input">
+            </label>
+        </form>
     </div>
-    <button class="header__burger"></button>
 </header>
 
 <main class="content">
@@ -143,6 +179,6 @@
     </div>
 
 </footer>
-
+<script src="index.js"></script>
 </body>
 </html>

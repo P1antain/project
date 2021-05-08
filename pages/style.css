@@ -87,6 +87,10 @@ font-family: 'Proto Grotesk Light', sans-serif;
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+    transition: .5s all;
+}
+.header__item-help_link:hover{
+    color: #224CFF;
 }
 
 .header__item-help_item:last-child{
@@ -108,15 +112,19 @@ font-family: 'Proto Grotesk Light', sans-serif;
     margin: 5px;
     border: 0;
 }
-
-.header__search::after{
-    content: '';
-    margin-left: 34px;
-    border: 0.7px solid #A7A6A6;
-    width: 20px;
-    transform: rotate(90deg);
-    cursor: default;
+.header__profile-split{
+        border: 0.7px solid #A7A6A6;
+        width: 20px;
+        transform: rotate(90deg);
 }
+/*.header__search::after{*/
+/*    content: '';*/
+/*    margin-left: 34px;*/
+/*    border: 0.7px solid #A7A6A6;*/
+/*    width: 20px;*/
+/*    transform: rotate(90deg);*/
+/*    cursor: default;*/
+/*}*/
 .header__login{
     width: 20px;
     height: 20px;
@@ -224,7 +232,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
     .header__login_active{
         display: block;
     }
-    .header__search::after{
+    .header__profile-split{
         display: none;
     }
     .header__profile{

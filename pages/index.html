@@ -34,6 +34,25 @@
             </nav>
             <div class="header__profile">
                 <button class="header__search"></button>
+<!--                <div class="header__search-field">-->
+<!--                    <form action="" class="header__search-form" method="get">-->
+<!--                        <label for="search-input">-->
+<!--                            <input type="text" class="header__search-input" id="search-input">-->
+<!--                        </label>-->
+<!--                    </form>-->
+<!--                    <form action="" class="header__result-form" method="post">-->
+<!--                        <span class="header__result-text">Причины подростковой агрессии</span>-->
+<!--                        <a href="#" class="header__result-link">статьи</a>-->
+<!--                    </form>-->
+<!--                    <form action="" class="header__result-form" method="post">-->
+<!--                        <span class="header__result-text">Что делать если ваш младший агрессивно себя ведет, решил закрыть пару?</span>-->
+<!--                        <a href="#" class="header__result-link">вопросы</a>-->
+<!--                    </form>-->
+<!--                    <form action="" class="header__result-form" method="post">-->
+<!--                        <span class="header__result-text">Как реагировать на агрессивное поведения ребенка</span>-->
+<!--                        <a href="#" class="header__result-link">книги</a>-->
+<!--                    </form>-->
+<!--                </div>-->
                 <div class="header__profile-split"></div>
                 <button class="header__login"></button>
             </div>
@@ -57,16 +76,65 @@
                     <li class="header__burger-item"><a href="" class="header__burger-link">Уoutube</a></li>
                 </ul>
         </div>
+        <div class="header__burger-authorization">
+            <form action="" class="header__burger-form">
+                <button class="header__burger-city" type="button">Москва. Изменить город</button>
+                <button class="header__burger-exit">Выйти</button>
+            </form>
+        </div>
     </div>
-<!--    <div class="header__search-field">-->
-<!--        <form action="" class="header__search-form">-->
-<!--            <label for="search-input">-->
-<!--                <input type="text" class="header__search-input" id="search-input">-->
-<!--            </label>-->
-<!--        </form>-->
-<!--    </div>-->
+    <div class="header__search-field">
+        <form action="" class="header__search-form" method="get">
+            <label for="search-input">
+                <input type="text" class="header__search-input" id="search-input" placeholder="Что искать">
+            </label>
+        </form>
+        <form action="" class="header__result-form" method="post">
+            <span class="header__result-text">Причины подростковой агрессии</span>
+            <a href="#" class="header__result-link">статьи</a>
+        </form>
+        <form action="" class="header__result-form" method="post">
+            <span class="header__result-text">Что делать если ваш младший агрессивно себя ведет, решил закрыть пару?</span>
+            <a href="#" class="header__result-link">вопросы</a>
+        </form>
+        <form action="" class="header__result-form" method="post">
+            <span class="header__result-text">Как реагировать на агрессивное поведения ребенка</span>
+            <a href="#" class="header__result-link">книги</a>
+        </form>
+    </div>
 </header>
+<!--Попап Входа-->
+<div class="popup popup__profile">
+    <div class="popup__overlay">
+        <form action="" class="popup__form">
+            <button class="popup__close" type="reset"></button>
+            <span class="popup__header">Вход</span>
+            <span class="popup__text">Вход в личный кабинет доступен наставникам программы «Старшие Братья Старшие Сёстры».</span>
+            <span class="popup__text"> Пожалуйста, введите логин и пароль из письма. Если вам не приходило письмо, свяжитесь с вашим куратором.</span>
+            <section class="popup__section">
+                <label for="login" class="popup__label">
+                    <input type="text" class="popup__input" id="login" placeholder="Логин">
+                </label>
+                <label for="password" class="popup__label">
+                    <input type="text" class="popup__input" id="password" placeholder="Пароль">
+                </label>
+            </section>
+            <a href="" class="popup__reset">Забыли пароль?</a>
+            <button class="popup__accept" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+<div class="popup popup__city">
+    <div class="popup__overlay">
+        <form action="" class="popup__form">
+            <span class="popup__header popup__city-header">Выберите ваш город</span>
+            <span class="popup__text popup__city-text">Москва</span>
+            <span class="popup__text popup__city-text popup__city-text_active">Санкт-петербург</span>
+            <span class="popup__text popup__city-text">Абакан</span>
 
+        </form>
+    </div>
+</div>
 <main class="content">
 <!--  Календарь  -->
     <div class="calendar__card">

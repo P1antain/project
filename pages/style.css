@@ -566,7 +566,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
     .calendar__about,
     .calendar__place,
     .calendar__footer{
-        max-width:260px
+        /*max-width:260px*/
     }
     .calendar__about{
         margin: 5px auto 0;
@@ -1523,4 +1523,49 @@ font-family: 'Proto Grotesk Light', sans-serif;
         width: 100%;
         padding-left: 0;
     }
+}
+.calendar__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar__card_block{
+    width: 570px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.calendar__card_block:nth-child(3){
+    margin-right: 0;
+}
+@media screen and (max-width: 1920px){
+    .calendar__card_block:nth-child(3){
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1440px){
+    .calendar__card_block:nth-child(2n){
+        margin-right: 0;
+    }
+    .calendar__card_block:last-of-type{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .calendar__card_block {
+        width: 370px
+    }
+}
+@media screen and (max-width: 800px) {
+    .calendar__block{
+        flex-direction: column;
+        align-content: center;
+    }
+    .calendar__card_block{
+        margin-right:0;
+    }
+    .calendar__card_block:nth-child(3){
+        margin-right: 0;
+    }
+
 }

@@ -1697,6 +1697,10 @@ font-family: 'Proto Grotesk Light', sans-serif;
     .about__cooperation-block{
         max-width: 570px;
         margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .about__cooperation-block:last-of-type{
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1734,6 +1738,13 @@ font-family: 'Proto Grotesk Light', sans-serif;
         max-width: 770px;
         font-size: 23px;
         line-height: 30px;
+    }
+    .about__cooperation-wrapper{
+        padding: 30px 15px;
+    }
+    .about__cooperation-information{
+        font-size: 15px;
+        line-height: 21px;
     }
 }
 @media screen and (max-width: 600px) {

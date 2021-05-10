@@ -1696,6 +1696,7 @@ font-family: 'Proto Grotesk Light', sans-serif;
     }
     .about__cooperation-block{
         max-width: 570px;
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 1024px) {

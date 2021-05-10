@@ -1567,5 +1567,186 @@ font-family: 'Proto Grotesk Light', sans-serif;
     .calendar__card_block:nth-child(3){
         margin-right: 0;
     }
-
+}
+.about{
+}
+.about__heading{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.about__text{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 50px;
+    text-align: center;
+}
+.about__logo{
+    width: 357px;
+    height: 65px;
+    background-size: contain;
+    margin: 50px auto 0;
+}
+.about__organization{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+.about__organization-wrapper{
+    width: 570px;
+    height: 570px;
+    background: #F8D162;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about__organization-text{
+    max-width: 540px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 52px 30px;
+}
+.about__quote-block{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 80px;
+}
+.about__quote-cite{
+    max-width: 1170px;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 50px;
+}
+.about__cooperation{
+    display: flex;
+    max-width: 1770px;
+}
+.about__cooperation-block{
+    width: 568px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.about__cooperation-block:last-of-type{
+    margin-right: 0;
+}
+.about__cooperation-text{
+    width: 100%;
+    background: #C8D1FF;
+    border-radius: 70px;
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 30px;
+    padding: 45px 0;
+    text-align: center;
+}
+.about__cooperation-wrapper{
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 30px;
+}
+.about__cooperation-information{
+    font-family: 'PTRootUIWebRegular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+.about__cooperation-link{
+    font-family: 'Proto Grotesk Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #224CFF;
+    text-decoration: none;
+}
+@media screen and (max-width: 1440px){
+    .about__quote-cite{
+        max-width: 964px;
+    }
+}
+@media screen and (max-width: 1180px){
+    .about__cooperation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__cooperation-block{
+        max-width: 570px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .about__heading {
+        max-width: 770px;
+        margin-top: 15px;
+    }
+    .about__text {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .about__logo {
+        width: 252px;
+        height: 46px;
+        margin-top: 30px;
+    }
+    .about__organization{
+        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__organization-wrapper{
+        width: 370px;
+        height: 358px;
+    }
+    .about__organization-text{
+        font-size: 15px;
+        line-height: 21px;
+        padding: 30px 15px;
+    }
+    .about__quote-block{
+        padding: 30px 0;
+    }
+    .about__quote-cite{
+        max-width: 770px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about__logo {
+        margin-top: 20px;
+    }
+    .about__organization{
+        margin: 30px 0;
+    }
+    .about__organization-wrapper{
+        width: 290px;
+        height: 280px;
+    }
+    .about__cooperation-block{
+        max-width: 290px;
+    }
 }
